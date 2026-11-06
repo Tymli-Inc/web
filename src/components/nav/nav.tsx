@@ -164,6 +164,7 @@ export default function Nav() {
                 <div className={styles.navLinks}>
                     <NavLink href="/" isActive={isNavLinkActive('/')}>Home</NavLink>
                     <NavLink href="/#features" isActive={isNavLinkActive('/#features')}>Features</NavLink>
+                    <NavLink href="/pricing" isActive={isNavLinkActive('/pricing')}>Pricing</NavLink>
                     <NavLink href="/about" isActive={isNavLinkActive('/about')}>About</NavLink>
                 </div>
                 <div className={styles.cta}>
@@ -301,6 +302,11 @@ export default function Nav() {
                         <motion.div variants={mobileNavLinkVariants}>
                             <div onClick={() => setMenuOpen(false)}>
                                 <NavLink href="/#features" isActive={isNavLinkActive('/#features')}>Features</NavLink>
+                            </div>
+                        </motion.div>
+                        <motion.div variants={mobileNavLinkVariants}>
+                            <div onClick={() => setMenuOpen(false)}>
+                                <NavLink href="/pricing" isActive={isNavLinkActive('/pricing')}>Pricing</NavLink>
                             </div>
                         </motion.div>
                         <motion.div variants={mobileNavLinkVariants}>
